@@ -1,4 +1,5 @@
 const { Document, User, Category, Tag } = require('../models');
+const { Op } = require('sequelize');
 const { createAuditLog } = require('../services/auditService');
 const { processOCR } = require('../services/ocrService');
 const { validatePermission } = require('../services/permissionService');
